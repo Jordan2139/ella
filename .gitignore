@@ -1,0 +1,59 @@
+# ===============================
+# Xcode
+# ===============================
+DerivedData/
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace/xcuserdata
+*.xcuserstate
+xcuserdata/
+
+# ===============================
+# Swift Package Manager
+# ===============================
+.build/
+Packages/
+Package.resolved
+
+# ===============================
+# SwiftData / Core Data
+# ===============================
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# ===============================
+# iOS / macOS
+# ===============================
+.DS_Store
+*.swp
+*.lock
+*.log
+
+# ===============================
+# Certificates & provisioning
+# ===============================
+*.p12
+*.mobileprovision
+
+# ===============================
+# Playgrounds
+# ===============================
+timeline.xctimeline
+playground.xcworkspace
+
+# ===============================
+# Fastlane (if added later)
+# ===============================
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# ===============================
+# Environment / secrets
+# ===============================
+.env
