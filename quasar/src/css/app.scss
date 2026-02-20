@@ -1,0 +1,153 @@
+// app global css in SCSS form
+:root {
+  --ella-primary: #ffd1dc;
+  --ella-bg: #120a0c;
+  --ella-surface: #1a1014;
+  --ella-surface-2: #21151b;
+  --ella-border: rgba(255, 209, 220, 0.12);
+  --ella-muted: #b5aab0;
+  --ella-text: #f6eef2;
+  --ella-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+}
+
+body {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--ella-bg);
+  color: var(--ella-text);
+}
+
+.q-page {
+  background: var(--ella-bg);
+  color: var(--ella-text);
+}
+
+.ella-page {
+  background: var(--ella-bg);
+  color: var(--ella-text);
+}
+
+.ella-header {
+  background: rgba(18, 10, 12, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--ella-border);
+}
+
+.ella-card {
+  background: var(--ella-surface);
+  border: 1px solid var(--ella-border);
+  border-radius: 16px;
+  box-shadow: var(--ella-shadow);
+}
+
+.ella-card-soft {
+  background: var(--ella-surface-2);
+  border: 1px solid var(--ella-border);
+  border-radius: 14px;
+}
+
+.ella-muted {
+  color: var(--ella-muted);
+}
+
+.ella-chip {
+  background: rgba(255, 209, 220, 0.12);
+  color: var(--ella-primary);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.ella-title {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.ella-subtitle {
+  color: var(--ella-muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.ella-btn-primary {
+  background: var(--ella-primary);
+  color: #120a0c;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.ella-input .q-field__control,
+.ella-input .q-field__native {
+  color: var(--ella-text);
+}
+
+.ella-input .q-field__control {
+  background: var(--ella-surface-2);
+  border-radius: 12px;
+}
+
+.ella-input.q-field--outlined .q-field__control:before {
+  border-color: var(--ella-border);
+}
+
+.ella-input.q-field--outlined .q-field__control:hover:before {
+  border-color: rgba(255, 209, 220, 0.4);
+}
+
+.drag-handle {
+  cursor: grab;
+}
+
+.ella-section {
+  border-top: 1px solid var(--ella-border);
+  padding-top: 16px;
+}
+
+.ella-tab .q-tab__label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+}
+
+.ella-tab.q-tab--active .q-tab__indicator {
+  background: var(--ella-primary);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.stitch-page {
+  padding: 0;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.stitch-theme-workout-dashboard-pink,
+.stitch-theme-edit-workouts,
+.stitch-theme-active-workout,
+.stitch-theme-workout-details,
+.stitch-theme-workout-history,
+.stitch-theme-user-profile,
+.stitch-theme-body-insights-revamped {
+  --ella-primary: #ffd1dc;
+  --ella-bg-light: #f8f5f6;
+  --ella-bg-dark: #230f14;
+  --ella-surface-dark: #1e1e1e;
+  --ella-neutral-dark: #2a2a2a;
+}
+
+.stitch-theme-workout-details {
+  --ella-bg-dark: #120a0c;
+}

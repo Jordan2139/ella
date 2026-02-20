@@ -1,0 +1,184 @@
+<template>
+  <q-page class="stitch-page">
+    <div class="stitch-theme-anatomical_body_insights dark bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header -->
+<header class="flex items-center justify-between p-4 bg-background-light dark:bg-background-dark/50 backdrop-blur-md sticky top-0 z-10">
+<button class="p-2 hover:bg-primary/10 rounded-full transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold tracking-tight">Body Insights</h1>
+<button class="p-2 hover:bg-primary/10 rounded-full transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">info</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-1 overflow-y-auto pb-24">
+<!-- Mode Toggle -->
+<div class="px-4 py-4">
+<div class="flex p-1 bg-primary/10 dark:bg-slate-800/50 rounded-xl">
+<button class="flex-1 flex items-center justify-center py-2 px-4 rounded-lg bg-primary text-background-dark font-semibold shadow-sm transition-all">
+                    Progress
+                </button>
+<button class="flex-1 flex items-center justify-center py-2 px-4 rounded-lg text-slate-600 dark:text-slate-400 font-medium hover:text-primary transition-all">
+                    Fatigue
+                </button>
+</div>
+</div>
+<!-- Silhouette Section -->
+<div class="relative flex flex-col items-center justify-center py-8">
+<div class="relative flex flex-col items-center justify-center py-4 w-full max-w-sm mx-auto">
+<!-- Detailed Muscle Diagram -->
+<div class="relative w-full aspect-[3/4] flex justify-center">
+<img alt="Muscle Anatomy" class="h-full object-contain opacity-80" src="{{DATA:IMAGE:SCREEN_10_IMAGE_1}}"/>
+<!-- Callout: Chest (Advanced) -->
+<div class="absolute top-[25%] left-[5%] z-10">
+<div class="bg-slate-900/80 backdrop-blur-md border border-primary/30 p-2 rounded-lg shadow-xl flex items-center gap-3">
+<div class="bg-primary/20 p-1.5 rounded">
+<span class="material-symbols-outlined text-primary text-sm">fitness_center</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[8px] uppercase tracking-tighter text-slate-400">Chest</span>
+<span class="text-[10px] font-bold text-primary">Advanced</span>
+</div>
+</div>
+</div>
+<!-- Callout: Back (Expert) -->
+<div class="absolute top-[10%] right-[5%] z-10">
+<div class="bg-slate-900/80 backdrop-blur-md border border-slate-700/50 p-2 rounded-lg shadow-xl flex items-center gap-3">
+<div class="bg-slate-800 p-1.5 rounded">
+<span class="material-symbols-outlined text-slate-400 text-sm">reorder</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[8px] uppercase tracking-tighter text-slate-400">Back</span>
+<span class="text-[10px] font-bold text-slate-200">Expert</span>
+</div>
+</div>
+</div>
+<!-- Callout: Legs (Beginner) -->
+<div class="absolute bottom-[25%] right-[5%] z-10">
+<div class="bg-slate-900/80 backdrop-blur-md border border-red-500/30 p-2 rounded-lg shadow-xl flex items-center gap-3">
+<div class="bg-red-500/20 p-1.5 rounded">
+<span class="material-symbols-outlined text-red-400 text-sm">line_weight</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[8px] uppercase tracking-tighter text-slate-400">Legs</span>
+<span class="text-[10px] font-bold text-red-400">Beginner</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Legend Bar -->
+<div class="mt-8 px-8 w-full max-w-sm"><div class="flex justify-center gap-4 mt-6">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-primary shadow-[0_0_8px_rgba(255,209,220,0.6)]"></div>
+<span class="text-[10px] font-bold uppercase tracking-wider text-slate-300">Ready</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-rose-400"></div>
+<span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Recovering</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+<span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Fatigued</span>
+</div>
+</div></div>
+</div>
+<!-- Insight Cards Grid -->
+<div class="px-4 mt-6 grid grid-cols-2 gap-4">
+<div class="p-4 rounded-xl bg-white dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/50">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-sm">fitness_center</span>
+<span class="text-xs font-medium text-slate-500">Chest Press</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-xl font-bold">+18%</span>
+<span class="text-[10px] text-emerald-500">▲ vs. Avg</span>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-white dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/50">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-sm">directions_run</span>
+<span class="text-xs font-medium text-slate-500">Squat Power</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-xl font-bold">-4%</span>
+<span class="text-[10px] text-red-500">▼ vs. Avg</span>
+</div>
+</div>
+<div class="col-span-2 p-4 rounded-xl bg-primary/5 border border-primary/20 flex items-center justify-between">
+<div>
+<h4 class="text-sm font-bold">Strongest Region</h4>
+<p class="text-xs text-slate-500">Your upper body strength is in the top 15%.</p>
+</div>
+<div class="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">emoji_events</span>
+</div>
+</div>
+</div>
+<!-- Muscle Detail List -->
+<div class="mt-8 px-4">
+<h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-4">Detailed Metrics</h3>
+<div class="space-y-3">
+<div class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-slate-800/20">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="text-sm font-medium">Shoulder Press</span>
+</div>
+<span class="text-sm font-bold">145 lbs</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-slate-800/20">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-rose-400"></div>
+<span class="text-sm font-medium">Bicep Curls</span>
+</div>
+<span class="text-sm font-bold">45 lbs</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-slate-800/20">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-red-500"></div>
+<span class="text-sm font-medium">Deadlift</span>
+</div>
+<span class="text-sm font-bold">185 lbs</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white/80 dark:bg-background-dark/90 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800 px-4 pb-6 pt-2">
+<div class="flex justify-between items-center max-w-md mx-auto">
+<a class="flex flex-col items-center gap-1 p-2 text-slate-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">insights</span>
+<span class="text-[10px] font-medium">Insights</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-slate-400" href="#">
+<span class="material-symbols-outlined">fitness_center</span>
+<span class="text-[10px] font-medium">Workout</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</a>
+</div>
+</nav>
+    </div>
+  </q-page>
+</template>
+
+<script setup>
+// Static Stitch layout
+</script>
+
+<style scoped>
+.stitch-theme-anatomical_body_insights {
+  --ella-primary: #ffd1dc;
+  --ella-bg-light: #f8f5f6;
+  --ella-bg-dark: #230f14;
+  --ella-surface-dark: #1e1e1e;
+  --ella-neutral-dark: #2a2a2a;
+}
+</style>

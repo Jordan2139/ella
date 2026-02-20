@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ella - Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ffd1dc",
+                        "background-light": "#f8f5f6",
+                        "background-dark": "#230f14",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header / Top Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 sticky top-0 z-10 border-b border-primary/10">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-primary/10 cursor-pointer">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">arrow_back</span>
+</div>
+<h2 class="text-lg font-bold leading-tight flex-1 text-center pr-10">Profile</h2>
+</div>
+<!-- Scrollable Content -->
+<div class="flex-1 overflow-y-auto pb-24">
+<!-- User Identity Section -->
+<div class="flex p-6 flex-col items-center gap-4">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32 ring-4 ring-primary/20 ring-offset-4 ring-offset-background-dark" data-alt="Profile picture of a young woman named Alex" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFJduSgHohjQ7pLNOvcBL41bBmcLjmE6BumxV3fU-wKwotnskNUaRkeDsT4TImihmuWziKW0o1naDQSxSMnFf84g9-2FazTzemt4RoCD6WjUSM96WeVvQye_qOW5fksDMMF1Fc2nXPU45BOY_0_CARogKXThZj7i_ERsx-lZSHxodCOvUeX0C9-Ln6cYJzN7qGqArN-SzgK8WiHx-AaKz_gF9AhNWH-3HEAui-qLj7QyzR2ttW6NJa_K_pf3Ow9UF_I9gsVIUYN48");'>
+</div>
+<div class="absolute bottom-0 right-0 bg-primary p-1.5 rounded-full border-4 border-background-dark">
+<span class="material-symbols-outlined text-background-dark text-sm block">edit</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center">
+<p class="text-2xl font-bold tracking-tight">Alex</p>
+<p class="text-primary/80 text-sm font-medium">Ready for Greatness?</p>
+</div>
+</div>
+<!-- My Stats Section -->
+<div class="px-4 py-2">
+<h3 class="text-lg font-bold px-2 pb-4">My Stats</h3>
+<div class="grid grid-cols-3 gap-3">
+<div class="flex flex-col items-center justify-center gap-1 rounded-xl p-4 bg-primary/5 border border-primary/10">
+<p class="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider text-center">Workouts</p>
+<p class="text-primary text-2xl font-bold leading-tight">124</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-1 rounded-xl p-4 bg-primary/5 border border-primary/10">
+<p class="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider text-center">PB Count</p>
+<p class="text-primary text-2xl font-bold leading-tight">18</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-1 rounded-xl p-4 bg-primary/5 border border-primary/10">
+<p class="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider text-center">Streak</p>
+<p class="text-primary text-2xl font-bold leading-tight">12d</p>
+</div>
+</div>
+</div>
+<!-- Achievements Section -->
+<div class="py-6">
+<div class="flex items-center justify-between px-6 pb-4">
+<h3 class="text-lg font-bold">Achievements</h3>
+<a class="text-primary text-sm font-medium" href="#">View All</a>
+</div>
+<div class="flex overflow-x-auto gap-4 px-6 no-scrollbar">
+<div class="flex flex-col items-center gap-2 min-w-[80px]">
+<div class="size-16 rounded-full bg-primary/20 flex items-center justify-center border-2 border-primary">
+<span class="material-symbols-outlined text-primary text-3xl fill">wb_sunny</span>
+</div>
+<p class="text-[10px] font-semibold text-center uppercase">Early Bird</p>
+</div>
+<div class="flex flex-col items-center gap-2 min-w-[80px]">
+<div class="size-16 rounded-full bg-primary/20 flex items-center justify-center border-2 border-primary">
+<span class="material-symbols-outlined text-primary text-3xl fill">directions_run</span>
+</div>
+<p class="text-[10px] font-semibold text-center uppercase">5K Runner</p>
+</div>
+<div class="flex flex-col items-center gap-2 min-w-[80px]">
+<div class="size-16 rounded-full bg-primary/20 flex items-center justify-center border-2 border-primary">
+<span class="material-symbols-outlined text-primary text-3xl fill">calendar_month</span>
+</div>
+<p class="text-[10px] font-semibold text-center uppercase">Consistent</p>
+</div>
+<div class="flex flex-col items-center gap-2 min-w-[80px]">
+<div class="size-16 rounded-full bg-slate-800/50 flex items-center justify-center border-2 border-slate-700 opacity-50">
+<span class="material-symbols-outlined text-slate-500 text-3xl">fitness_center</span>
+</div>
+<p class="text-[10px] font-semibold text-center uppercase text-slate-500">Power Lifter</p>
+</div>
+</div>
+</div>
+<!-- Account Settings Section -->
+<div class="px-4 py-2">
+<h3 class="text-lg font-bold px-2 pb-2">Account Settings</h3>
+<div class="bg-primary/5 rounded-xl border border-primary/10 overflow-hidden">
+<div class="flex items-center justify-between p-4 hover:bg-primary/10 cursor-pointer transition-colors group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">person</span>
+<span class="font-medium">Edit Profile</span>
+</div>
+<span class="material-symbols-outlined text-slate-500 group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+<div class="h-px bg-primary/10 mx-4"></div>
+<div class="flex items-center justify-between p-4 hover:bg-primary/10 cursor-pointer transition-colors group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">lock</span>
+<span class="font-medium">Privacy &amp; Security</span>
+</div>
+<span class="material-symbols-outlined text-slate-500 group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+<div class="h-px bg-primary/10 mx-4"></div>
+<div class="flex items-center justify-between p-4 hover:bg-primary/10 cursor-pointer transition-colors group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">notifications</span>
+<span class="font-medium">Notifications</span>
+</div>
+<span class="material-symbols-outlined text-slate-500 group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+<div class="h-px bg-primary/10 mx-4"></div>
+<div class="flex items-center justify-between p-4 hover:bg-primary/10 cursor-pointer transition-colors group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">help</span>
+<span class="font-medium">Help &amp; Support</span>
+</div>
+<span class="material-symbols-outlined text-slate-500 group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+<button class="w-full mt-6 py-4 text-rose-400 font-semibold flex items-center justify-center gap-2 rounded-xl hover:bg-rose-400/10 transition-colors">
+<span class="material-symbols-outlined">logout</span>
+                Logout
+            </button>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 w-full bg-background-light dark:bg-background-dark border-t border-primary/20 px-4 pb-6 pt-2">
+<div class="flex justify-between items-center max-w-lg mx-auto">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+<p class="text-[10px] font-bold uppercase tracking-wider">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">fitness_center</span>
+<p class="text-[10px] font-bold uppercase tracking-wider">Workouts</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">calendar_month</span>
+<p class="text-[10px] font-bold uppercase tracking-wider">Plans</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">groups</span>
+<p class="text-[10px] font-bold uppercase tracking-wider">Community</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary relative" href="#">
+<span class="material-symbols-outlined text-2xl fill">person</span>
+<p class="text-[10px] font-bold uppercase tracking-wider">Profile</p>
+<div class="absolute -top-1 right-1/2 translate-x-4 w-1.5 h-1.5 bg-primary rounded-full"></div>
+</a>
+</div>
+</div>
+</body></html>

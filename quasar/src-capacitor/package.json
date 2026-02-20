@@ -1,0 +1,13 @@
+{
+  "name": "quasar",
+  "version": "0.0.1",
+  "description": "A Quasar Project",
+  "author": "Jordan.#2139 <65438497+Jordan2139@users.noreply.github.com>",
+  "private": true,
+  "dependencies": {
+    "@capacitor/app": "^7.0.0",
+    "@capacitor/cli": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/ios": "^7.5.0"
+  }
+}
